@@ -8,7 +8,7 @@
 ____
 - Open opp ```app.js```
   - Under "Global Variables" you will set your config
-  - ```imageFormat```: What extension does your image contain (i.e. is it a .jpg, .png etc)
+  - ```imageFormat```: What extension does your image contain (i.e. is it a *.jpg*, .*png* etc)
     - e.g it's a .jpg: ```const imageFormat = "jpg"``` (line:5)
   - ```year```: What year are your images from? This will affect the file name (e.g. 2000_42.jpg)
     - e.g you want to set the year to 2000: ```const year = "2000"``` (line:6)
@@ -16,7 +16,6 @@ ____
  ___
  - You are ready: Install dependencies and run script: ``` npm i "&&" npm start ```
  - Images are now renamed, and stored in the same folder you placed them ```/media```
-- You're all set, go to: ```http://localhost:3000/```
 
 
 # Article
