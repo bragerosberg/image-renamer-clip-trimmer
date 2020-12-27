@@ -1,0 +1,16 @@
+{
+  "name": "imagerenamer",
+  "version": "1.0.0",
+  "description": "Takes an entire media folder and renames them in ascending order",
+  "main": "app.js",
+  "dependencies": {
+    "glob": "^7.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "Brage Røsberg",
+  "license": "MIT"
+}
