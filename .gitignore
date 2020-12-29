@@ -1,6 +1,6 @@
 # dependencies
-.history
 node_modules
 
-
+# local
+.history
 media/*
