@@ -1,3 +1,6 @@
 # dependencies
 .history
 node_modules
+
+
+media/*
