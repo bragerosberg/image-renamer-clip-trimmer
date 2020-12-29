@@ -7,10 +7,10 @@
 - Add all the photos you wish to name in the ```/media``` folder
 ____
 - Open opp ```app.js```
-  - Under "Global Variables" you will set your config
+  - Under "Config Variables" you will set your config
   - ```imageFormat```: What extension does your image contain (i.e. is it a *.jpg*, .*png* etc)
     - e.g it's a .jpg: ```const imageFormat = "jpg"``` (line:5)
-  - ```year```: What year are your images from? This will affect the file name (e.g. 2000_42.jpg)
+  - ```baseName```: What year are your images from? This will affect the file name (e.g. 2000_42.jpg)
     - e.g you want to set the year to 2000: ```const year = "2000"``` (line:6)
  > The example above would turn to an array of images = ```[photo0.jpg, photo1.jpg, photo2.jpg]``` to = ```[2000_0.jpg, 2000_1.jpg, 2000_2.jpg]```
  ___
