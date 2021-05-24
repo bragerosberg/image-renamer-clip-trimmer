@@ -1,4 +1,4 @@
-# imageRenamer
+# WIP: imageRenamer (Missing description in code)
 > Make the process of naming photos within albums easy, set the year and image extension and this app will do the rest
 
 ## Use Locally
