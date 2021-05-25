@@ -6,11 +6,8 @@ ffmpeg.setFfmpegPath(ffmpegPath)
 
 const clipFormat = 'mp4';
 
-glob(`media/*.${clipFormat}`, (_, clips) => {
-
+glob(`*.${clipFormat}`, (_, clips) => {
   clips.forEach((clip, i) => {
-
-    console.log(typeof clip);
 
    ffmpeg(clip)
     .setStartTime('00:02:30')
