@@ -1,4 +1,4 @@
-# image renamer + clip trimmer
+# image renamer + clip trimmer (README WIP)
 > Scripts to reduce repetitive process on editing or updating media files
 
 Do you have a hundreds of images you want to rename by year/event? Or perhaps you want to trim your clips to only be the intro?
@@ -43,6 +43,18 @@ Running the script would then update a list of unnamed images and convert them l
 CEA_enNO808NO808&oq=uuidasd223.png --> Wedding_0.png
 d&aqs=12312S/D..69i57j69i59l2j69.png --> Wedding_1.png
 1378j0j1&sourceid=chrome&ie=23.png --> Wedding_2.png
+```
+
+### Video trimming
+Select your video file extension (e.g. mp4) and the file path to where they are located, the start second and how long of a clip you want. 
+
+If you have downloaded your favorite copyright free videos, but there is always an intro you want to cut out you can trim the videos to start from a desired beginning (e.g. 40 seconds into the clip), and how much of the remaining you want. If you do not update the `setDuration` you will get the next 2 minutes/ the rest. 
+
+Running the script would then update a set of clips to be the following (as example):
+```
+copyRightFreeClip.mp4 (duration 8:25) --> copyRightFreeClip.mp4 (duration 2:00)
+anotherCopyRightFreeClip.mp4 (duration 2:55) --> anotherCopyRightFreeClip.mp4 (duration 2:00)
+lastCopyRightFreeClip.mp4 (duration 4:56) --> lastCopyRightFreeClip.mp4 (duration 2:00)
 ```
 
 # Get in Touch With me
