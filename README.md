@@ -28,11 +28,11 @@ These scripts are both ones I've created personally whenever I faced tasks to do
 - [Contact Options](#get-in-touch-with-me)
 
 # Contents
-- Have full control and enhance efficiency 
+- Have full control and enhance efficiency by skipping repeating renaming images/trimming videos
 
 # Tech Usage and Reasoning
-**Glob** - fetch files matching query (images, clips) and then iterate on the result 
-**fs from node** - rename, unlinkSync
+- **Glob** - fetch files matching query (images, clips) and then iterate on the result 
+- **fs from node** - rename, unlinkSync
 
 # Full Description
 ### Image Renaming
