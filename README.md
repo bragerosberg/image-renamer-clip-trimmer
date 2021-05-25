@@ -1,10 +1,14 @@
-# image renamer & clip trimmer
-> Automation of renaming images and trimming video clips
+# image renamer + clip trimmer
+> Scripts to reduce repetitive process on editing or updating media files
+
+Do you have a hundreds of images you want to rename by year/event? Or perhaps you want to trim your clips to only be the intro?
+Skip repeating the same process over and over and instead use scripts that does the tedious job for you.
+
+These scripts are both ones I've created personally whenever I faced tasks to do either of these, and like a wise Abraham Lincoln said _Give me six hours to chop down a tree and I will spend the first four sharpening the axe_. That is exactly what I did, used some time setting up the config for this scripts - and since then it's an ease for me to do these tasks.
 
 ## Use Locally
 - Clone this repository at your desired location
 - cd to ```/image-renamer-clip-trimmer``` folder
-- TODO: Explain where to add assets/media files
  ___
  
  - You are ready: Install dependencies and run your desired script 
@@ -31,7 +35,15 @@
 **fs from node** - rename, unlinkSync
 
 # Full Description
+### Image Renaming
+Select your image file extension type (e.g. jpg, png) and a base-name you want your renames to be, as an example this can be a year, or a location from where the photos was taken.
 
+Running the script would then update a list of unnamed images and convert them like below (as example):
+```
+CEA_enNO808NO808&oq=uuidasd223.png --> Wedding_0.png
+d&aqs=12312S/D..69i57j69i59l2j69.png --> Wedding_1.png
+1378j0j1&sourceid=chrome&ie=23.png --> Wedding_2.png
+```
 
 # Get in Touch With me
 [<img align="left" style="margin-left: 10px;" alt="codeSTACKr | LinkedIn" width="40px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
