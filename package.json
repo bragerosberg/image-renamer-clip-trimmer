@@ -4,11 +4,14 @@
   "description": "Takes an entire media folder and renames them in ascending order",
   "main": "app.js",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "fluent-ffmpeg": "^2.1.2",
     "glob": "^7.1.6"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app"
+    "rename": "node renameimage",
+    "trim": "node trimmp4"
   },
   "keywords": [],
   "author": "Brage Røsberg",
