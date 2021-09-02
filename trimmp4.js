@@ -8,7 +8,6 @@ const clipFormat = 'mp4';
 
 glob(`*.${clipFormat}`, (_, clips) => {
   clips.forEach((clip, i) => {
-
    ffmpeg(clip)
     .setStartTime('00:02:30')
     .setDuration(30)

@@ -1,18 +1,16 @@
 const fs = require("fs");
 const glob = require("glob");
 
-const imageFormat = "png";
-const fileName = 'addBaseNameHere';
+const imageFormat = "jpg";
+const fileName = 2020;
 
-
-glob(`*.${imageFormat}`, (err, images) => {
+let index = 0;
+glob(`media/*.${imageFormat}`, (err, images) => {
   images.forEach((img, i) => {
-    fs.rename(img, `${fileName}.${imageFormat}`, () => {
-      console.log(`${img} renamed to ${fileName}_${i}.${imageFormat}`);
+    index += 1;
+    fs.rename(img, `media/${index}_2020.${imageFormat}`, () => {
+      console.log(`${img} ${i} renamed to ${fileName}_${i}.${imageFormat}`);
       if (err) console.error(err);
-    })
-  }
-  );
+    });
+  });
 });
-
-
