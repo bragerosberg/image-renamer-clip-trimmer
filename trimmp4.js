@@ -5,7 +5,6 @@ const fs = require('fs');
 ffmpeg.setFfmpegPath(ffmpegPath)
 
 const clipFormat = 'mp4';
-
 glob(`*.${clipFormat}`, (_, clips) => {
   clips.forEach((clip, i) => {
    ffmpeg(clip)
