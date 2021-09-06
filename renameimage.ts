@@ -5,6 +5,7 @@ const imageFormat = "jpg";
 const fileName = 2020;
 
 let index = 0;
+
 glob(`media/*.${imageFormat}`, (err, images) => {
   images.forEach((img, i) => {
     index += 1;
