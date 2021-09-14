@@ -1,11 +1,8 @@
-# image renamer + clip trimmer (README WIP)
+# image renamer + clip trimmer
 > Scripts to reduce repetitive process on editing or updating media files
 
 Do you have a hundreds of images you want to rename by year/event? Or perhaps you want to trim your clips to only be the intro?
 Skip repeating the same process over and over and instead use scripts that does the tedious job for you.
-
-These scripts are both ones I've created personally whenever I faced tasks to do either of these, and like a wise Abraham Lincoln said _Give me six hours to chop down a tree and I will spend the first four sharpening the axe_. That is exactly what I did, used some time setting up the config for this scripts - and since then it's an ease for me to do these tasks.
-
 ## Use Locally
 - Clone this repository at your desired location
 - cd to ```/image-renamer-clip-trimmer``` folder
@@ -28,7 +25,7 @@ These scripts are both ones I've created personally whenever I faced tasks to do
 - [Contact Options](#get-in-touch-with-me)
 
 # Contents
-- Have full control and enhance efficiency by skipping repeating renaming images/trimming videos
+- Have full control and enhance efficiency by skipping repeating renaming images, trimming multiple videos into a custom length.
 
 # Tech Usage and Reasoning
 - **Glob** - fetch files matching query (images, clips) and then iterate on the result 
