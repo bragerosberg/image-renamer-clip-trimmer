@@ -1,4 +1,4 @@
-# image renamer + clip trimmer
+# File optimazation: image renamer | clip trimmer
 > Personal scripts I've created to automate repetitive tasks when editing, handling or updating media files like images and movies
 
 **TL;DR**: Skip renamining countless amount of files manually, cutting out the intro of video clips. Use scripts that automates them tedious jobs for you.
