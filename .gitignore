@@ -3,4 +3,6 @@ node_modules
 
 # local
 .history
+
+# prevent tracking the files in the media folder
 media/*
