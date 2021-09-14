@@ -38,12 +38,12 @@ Whether you want to rename images, or trim video clips: take the media assets yo
 
 # Full Description
 ### Image Renaming
-Enter the file `renameImage.ts` and navigate to the declared variables. 
+Enter the file `renameImage.ts` and navigate to the declared variables on line 12 & 13. 
 These are the variables, and their intended usage:
 - `fileYear`: What year are the files form (e.g. 2021)
 - `prefix`: What context is the file (e.g. June, Wedding, Christmas)
 
-Running the script would then update a list of unnamed images and convert them like below (as example):
+Running the script, `npm run rename`, would update a list of randomly named images and convert them into a more structured format (_see example below_):
 ```
 CEA_enNO808NO808&oq=uuidasd223.png --> Wedding_2021_0.png
 d&aqs=12312S/D..69i57j69i59l2j69.png --> Wedding_2021_1.png
@@ -51,15 +51,17 @@ d&aqs=12312S/D..69i57j69i59l2j69.png --> Wedding_2021_1.png
 ```
 
 ### Video trimming
-Select your video file extension (e.g. mp4) and the file path to where they are located, the start second and how long of a clip you want. 
+Enter the file `trimMP4.ts` and navigate to the declared variables on line 15 & 16.
+These are the variables, and their intended usage:
+- `startTime`: when do you want the new start time to be (hh:mm:ss) (e.g. 00:00:00)
 
-If you have downloaded your favorite copyright free videos, but there is always an intro you want to cut out you can trim the videos to start from a desired beginning (e.g. 40 seconds into the clip), and how much of the remaining you want. If you do not update the `setDuration` you will get the next 2 minutes/ the rest. 
+ - `clipDuration`: how long do you want the clip to be in seconds (e.g. 30)
 
-Running the script would then update a set of clips to be the following (as example):
+Running the script, `npm run trim`, would update the list of videos added to the `/media` folder and convert them into clips like the following (_see example below_):
 ```
-copyRightFreeClip.mp4 (duration 8:25) --> copyRightFreeClip.mp4 (duration 2:00)
-anotherCopyRightFreeClip.mp4 (duration 2:55) --> anotherCopyRightFreeClip.mp4 (duration 2:00)
-lastCopyRightFreeClip.mp4 (duration 4:56) --> lastCopyRightFreeClip.mp4 (duration 2:00)
+copyRightFreeClip.mp4 (duration 8:25) --> copyRightFreeClip.mp4 (duration 0:30)
+anotherCopyRightFreeClip.mp4 (duration 2:55) --> anotherCopyRightFreeClip.mp4 (duration 0:30)
+lastCopyRightFreeClip.mp4 (duration 4:56) --> lastCopyRightFreeClip.mp4 (duration 0:30)
 ```
 
 # Get in Touch With me
