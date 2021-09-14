@@ -1,8 +1,7 @@
 {
-  "name": "imagerenamer",
-  "version": "1.0.0",
-  "description": "Takes an entire media folder and renames them in ascending order",
-  "main": "app.js",
+  "name": "renameimageandtrimmp4",
+  "version": "1.0.1",
+  "description": "File automation: rename multiple images with personal prefix, trim mp4 to custom length",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "fluent-ffmpeg": "^2.1.2",
@@ -14,8 +13,8 @@
     "typescript": "^4.4.2"
   },
   "scripts": {
-    "rename": "node renameimage",
-    "trim": "node trimmp4"
+    "rename": "node renameImage.ts",
+    "trim": "node trimMP4.ts"
   },
   "keywords": [],
   "author": "Brage Røsberg",
