@@ -1,11 +1,17 @@
 # image renamer + clip trimmer
-> Scripts to reduce repetitive process on editing or updating media files
+> Personal scripts I've created to automate repetitive tasks when editing, handling or updating media files like images and movies
 
-Do you have a hundreds of images you want to rename by year/event? Or perhaps you want to trim your clips to only be the intro?
-Skip repeating the same process over and over and instead use scripts that does the tedious job for you.
+**TL;DR**: Skip renamining countless amount of files manually, cutting out the intro of video clips. Use scripts that automates them tedious jobs for you.
+
+Are you digitalizing your physical albums containing hundreds, or even thousands of photos? Have you downloaded your favorite movie series, but have an intro you always skip?
+This was my case, and I decided to automate whatever I could to spice up the repetitive process (e.g. naming > thousand copies of scanned physical photos 🤯)
+It was a lot more exciting to take on the challenge to make this a possibility, and oh boy, it felt good when it worked the way I hoped it could, saving me a lot of time. Where I know gladly will name copies of photos to whatever prefix someone wants. 
+
 ## Use Locally
 - Clone this repository at your desired location
 - cd to ```/image-renamer-clip-trimmer``` folder
+## Add your media
+Whether you want to rename images, or trim video clips: take the media assets you want to rename/compress and place it into the `/media` folder
  ___
  
  - You are ready: Install dependencies and run your desired script 
@@ -15,8 +21,7 @@ Skip repeating the same process over and over and instead use scripts that does 
   Trim video clip: 
   ``` npm run trim ```
   
- - Let the script run, depending on the files you want to update the run time may wary. 
-
+ - Let the script run, depending on the files you want to update the run time may wary. The updated media assets will be in the same folder `/media`
 
 # Article
 - [Contents of App](#contents)
@@ -33,25 +38,30 @@ Skip repeating the same process over and over and instead use scripts that does 
 
 # Full Description
 ### Image Renaming
-Select your image file extension type (e.g. jpg, png) and a base-name you want your renames to be, as an example this can be a year, or a location from where the photos was taken.
+Enter the file `renameImage.ts` and navigate to the declared variables on line 12 & 13. 
+These are the variables, and their intended usage:
+- `fileYear`: What year are the files form (e.g. 2021)
+- `prefix`: What context is the file (e.g. June, Wedding, Christmas)
 
-Running the script would then update a list of unnamed images and convert them like below (as example):
+Running the script, `npm run rename`, would update a list of randomly named images and convert them into a more structured format (_see example below_):
 ```
-CEA_enNO808NO808&oq=uuidasd223.png --> Wedding_0.png
-d&aqs=12312S/D..69i57j69i59l2j69.png --> Wedding_1.png
-1378j0j1&sourceid=chrome&ie=23.png --> Wedding_2.png
+CEA_enNO808NO808&oq=uuidasd223.png --> Wedding_2021_0.png
+d&aqs=12312S/D..69i57j69i59l2j69.png --> Wedding_2021_1.png
+1378j0j1&sourceid=chrome&ie=23.png --> Wedding_2021_2.png
 ```
 
 ### Video trimming
-Select your video file extension (e.g. mp4) and the file path to where they are located, the start second and how long of a clip you want. 
+Enter the file `trimMP4.ts` and navigate to the declared variables on line 15 & 16.
+These are the variables, and their intended usage:
+- `startTime`: when do you want the new start time to be (hh:mm:ss) (e.g. 00:00:00)
 
-If you have downloaded your favorite copyright free videos, but there is always an intro you want to cut out you can trim the videos to start from a desired beginning (e.g. 40 seconds into the clip), and how much of the remaining you want. If you do not update the `setDuration` you will get the next 2 minutes/ the rest. 
+ - `clipDuration`: how long do you want the clip to be in seconds (e.g. 30)
 
-Running the script would then update a set of clips to be the following (as example):
+Running the script, `npm run trim`, would update the list of videos added to the `/media` folder and convert them into clips like the following (_see example below_):
 ```
-copyRightFreeClip.mp4 (duration 8:25) --> copyRightFreeClip.mp4 (duration 2:00)
-anotherCopyRightFreeClip.mp4 (duration 2:55) --> anotherCopyRightFreeClip.mp4 (duration 2:00)
-lastCopyRightFreeClip.mp4 (duration 4:56) --> lastCopyRightFreeClip.mp4 (duration 2:00)
+copyRightFreeClip.mp4 (duration 8:25) --> copyRightFreeClip.mp4 (duration 0:30)
+anotherCopyRightFreeClip.mp4 (duration 2:55) --> anotherCopyRightFreeClip.mp4 (duration 0:30)
+lastCopyRightFreeClip.mp4 (duration 4:56) --> lastCopyRightFreeClip.mp4 (duration 0:30)
 ```
 
 # Get in Touch With me
