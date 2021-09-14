@@ -1,15 +1,15 @@
 const fs = require('fs');
 const glob = require('glob');
 
-const imageFormat = 'jpg';
 const fileName = 2021;
-const prefix = 'Mai';
+const prefix = 'Juni';
 
-glob(`media/*.${imageFormat}`, (err, images) => {
+glob(`media/*`, (err, images) => {
   images.forEach((img, i) => {
-    fs.rename(img, `media/${prefix}-${fileName}-${i}.${imageFormat}`, () => {
+    const [fileExtension] = img.match(/\.[0-9a-z]+$/i);
+    fs.rename(img, `media/${prefix}-${fileName}-${i}${fileExtension}`, () => {
       console.log(
-        `${img} ${i} renamed to ${prefix}-${fileName}-${i}.${imageFormat}`
+        `${img} ${i} renamed to ${prefix}-${fileName}-${i}${fileExtension}`
       );
       if (err) console.error(err);
     });
